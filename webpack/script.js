@@ -1,37 +1,8 @@
-//********************************************************** */
-
-// ukazka ako nacitas data z data/person.js
-
-// nacitame skills
-import { getSkills } from "../data/skills.js";
+// tu sa musia importovat vsetky js subory ktore vytvoris, aby ich stranka zaregistrovala.
+// v html je riadok   <script type="module" src="webpack/script.js"></script>
+// ktory importuje prave tento subor. Ten sluzi ako entry point pre vsetky js subory ktore sa budu
+// pouzivat. Ked subor nezaregistrujes tu tak ho html nevidi. Teoreticky vies novy subor pridat cisto aj ako
+// import do html rovnako ako sme pridali tento subor, ale nech to je konzistentne a nech nemame 
+// milion importov v html tak to robme takto.
 import "./lang-switcher.js";
-var skills = getSkills();
-
-// v html mame element, kam chceme vlozit skills
-// data-js je len random nazov pre selektor ktory som si vymyslel, oznacil si ten element v html subore
-// a tu ho viem jednoducho natiahnut takto
-var skillsContainer = document.querySelector("[data-js='skills']");
-
-// pomocna fnukcia na generovanie kontaineru pre skill
-function renderSkill(skill) {
-    //vytvorime div a dame mu classu skill, aby sme ho vedeli stylovat
-    const skillContainer = document.createElement("div");
-    skillContainer.classList.add("skill");
-
-    const skillName = document.createElement("p");
-    skillName.classList.add("skill-name");
-    skillName.textContent = skill.name;
-    skillContainer.appendChild(skillName);
-
-    return skillContainer;
-}
-
-// pre kazdy skill si zavolame funkciu na vytvorenie elementu a vlozime ho do skillsContainer
-skills.forEach((skill) => {
-    const skillElement = renderSkill(skill);
-    skillsContainer.appendChild(skillElement);
-});
-
-//********************************************************** */
-
-// v skills.scss je to nastylovane pozri tam
+import "./block-renderer.js";
