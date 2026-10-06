@@ -1,0 +1,23 @@
+@use "index" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: $page-background;
+  color: $text-color;
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  padding: $space-4 0;
+}
+
+.content-wrapper{
+  max-width: $content-width;
+  margin: 0 auto;
+}

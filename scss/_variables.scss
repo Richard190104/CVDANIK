@@ -1,0 +1,91 @@
+// Brand palette
+$color-primary-50: #eef4ff;
+$color-primary-100: #d9e6ff;
+$color-primary-200: #bcd2ff;
+$color-primary-300: #91b5ff;
+$color-primary-400: #6090f5;
+$color-primary-500: #3b6fe0;
+$color-primary-600: #2855c5;
+$color-primary-700: #2145a1;
+$color-primary-800: #203c82;
+$color-primary-900: #203568;
+
+$color-accent-50: #e9fbf7;
+$color-accent-100: #c9f4e9;
+$color-accent-500: #18a889;
+$color-accent-700: #117963;
+
+// Neutrals
+$color-white: #fff;
+$color-neutral-50: #f8fafc;
+$color-neutral-100: #f1f5f9;
+$color-neutral-200: #e2e8f0;
+$color-neutral-300: #cbd5e1;
+$color-neutral-400: #94a3b8;
+$color-neutral-500: #64748b;
+$color-neutral-600: #475569;
+$color-neutral-700: #334155;
+$color-neutral-800: #1e293b;
+$color-neutral-900: #0f172a;
+
+// Semantic colors
+$color-success: #15803d;
+$color-success-background: #f0fdf4;
+$color-warning: #a16207;
+$color-warning-background: #fefce8;
+$color-danger: #b91c1c;
+$color-danger-background: #fef2f2;
+$color-info: #0369a1;
+$color-info-background: #f0f9ff;
+
+// Application roles
+$page-background: $color-neutral-50;
+$surface-background: $color-white;
+$text-color: $color-neutral-800;
+$muted-color: $color-neutral-500;
+$border-color: $color-neutral-200;
+$link-color: $color-primary-700;
+$link-hover-color: $color-primary-900;
+$focus-color: $color-primary-500;
+
+// Typography
+$font-family-base: Arial, sans-serif;
+$font-family-heading: $font-family-base;
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-base: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-2xl: 1.5rem;
+$font-size-3xl: 2rem;
+$line-height-base: 1.6;
+$line-height-tight: 1.2;
+
+// Spacing
+$space-1: 0.25rem;
+$space-2: 0.5rem;
+$space-3: 0.75rem;
+$space-4: 1rem;
+$space-5: 1.5rem;
+$space-6: 2rem;
+$space-7: 3rem;
+$space-8: 4rem;
+
+// Layout and responsive breakpoints
+$content-width: 960px;
+$breakpoint-sm: 36rem;
+$breakpoint-md: 48rem;
+$breakpoint-lg: 64rem;
+
+// Shape and elevation
+$radius-sm: 0.25rem;
+$radius-md: 0.5rem;
+$radius-lg: 0.75rem;
+$radius-pill: 999px;
+$shadow-sm: 0 1px 2px rgb(15 23 42 / 8%);
+$shadow-md: 0 4px 12px rgb(15 23 42 / 10%);
+$shadow-lg: 0 12px 28px rgb(15 23 42 / 12%);
+
+// Motion
+$transition-fast: 150ms ease;
+$transition-base: 220ms ease;

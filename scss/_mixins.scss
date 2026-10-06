@@ -1,0 +1,6 @@
+@use "variables" as *;
+
+@mixin container($max-width: $content-width) {
+  width: $max-width;
+  margin-inline: auto;
+}
