@@ -4,6 +4,7 @@
 
 // nacitame skills
 import { getSkills } from "../data/skills.js";
+import "./lang-switcher.js";
 var skills = getSkills();
 
 // v html mame element, kam chceme vlozit skills
